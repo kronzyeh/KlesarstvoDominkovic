@@ -22,19 +22,21 @@
   <div id="app" class="hidden">
     <h1>Kalkulator cijene kamena</h1>
 
-    <label>Vrsta kamena</label>
-    <select id="stoneType">
-      <option value="granit">Granit</option>
-      <option value="mramor">Mramor</option>
-      <option value="vapnenac">Vapnenac</option>
-    </select>
+    <div class="card">
+      <label>Vrsta kamena</label>
+      <select id="stoneType">
+        <option value="granit">Granit</option>
+        <option value="mramor">Mramor</option>
+        <option value="vapnenac">Vapnenac</option>
+      </select>
 
-    <label>Kvadratura (m²)</label>
-    <input type="number" id="area" placeholder="npr. 12.5">
+      <label>Kvadratura (m²)</label>
+      <input type="number" id="area" placeholder="npr. 12.5">
 
-    <button onclick="calculate()">Izračunaj</button>
+      <button onclick="calculate()">Izračunaj</button>
 
-    <div id="result"></div>
+      <div id="result"></div>
+    </div>
   </div>
 
   <script src="app.js"></script>
